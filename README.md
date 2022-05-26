@@ -6,7 +6,7 @@
 
 ## 目录结构
 
-```
+
 ├── ./app.js								                # 入口文件
 ├── ./config.js								              # 全局配置文件
 ├── ./db									                  # 数据库
@@ -29,7 +29,7 @@
     ├── ./schema/article.json               # 文章管理
     ├── ./schema/index.json                 # 统一导出
     └── ./schema/user.json                  # 登陆、注册
-```
+
 
 
 
