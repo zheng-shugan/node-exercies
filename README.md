@@ -7,28 +7,28 @@
 ## 目录结构
 
 ```
-├── ./app.js								   # 入口文件
-├── ./config.js								   # 全局配置文件
-├── ./db									   # 数据库
-│   └── ./db/index.js						   # 导入自己的数据库 
-├── ./package.json							   # 项目信息
-├── ./router								   # express 路由
-│   ├── ./router/article.js				       # 文章管理
-│   ├── ./router/articleClass.js			   # 文章分类
-│   ├── ./router/index.js					   # 统一导出
-│   ├── ./router/user.js					   # 登陆、注册
-│   └── ./router/userInfo.js                   # 用户信息
-├── ./router_handler                           # 路由处理函数
-│   ├── ./router_handler/article.js		       # 文章管理
-│   ├── ./router_handler/articleClass.js	   # 文章分类
-│   ├── ./router_handler/index.js			   # 统一导出
-│   ├── ./router_handler/user.js			   # 登陆、注册
-│   └── ./router_handler/userInfo.js		   # 用户信息
-└── ./schema                                   # 校验规则     
-    ├── ./schema/articleClass.json             # 文章分类
-    ├── ./schema/article.json                  # 文章管理
-    ├── ./schema/index.json                    # 统一导出
-    └── ./schema/user.json                     # 登陆、注册
+├── ./app.js								                # 入口文件
+├── ./config.js								              # 全局配置文件
+├── ./db									                  # 数据库
+│   └── ./db/index.js						            # 导入自己的数据库 
+├── ./package.json							            # 项目信息
+├── ./router								                # express 路由
+│   ├── ./router/article.js				          # 文章管理
+│   ├── ./router/articleClass.js			      # 文章分类
+│   ├── ./router/index.js					          # 统一导出
+│   ├── ./router/user.js					          # 登陆、注册
+│   └── ./router/userInfo.js                # 用户信息
+├── ./router_handler                        # 路由处理函数
+│   ├── ./router_handler/article.js		      # 文章管理
+│   ├── ./router_handler/articleClass.js	  # 文章分类
+│   ├── ./router_handler/index.js			      # 统一导出
+│   ├── ./router_handler/user.js			      # 登陆、注册
+│   └── ./router_handler/userInfo.js		    # 用户信息
+└── ./schema                                # 校验规则     
+    ├── ./schema/articleClass.json          # 文章分类
+    ├── ./schema/article.json               # 文章管理
+    ├── ./schema/index.json                 # 统一导出
+    └── ./schema/user.json                  # 登陆、注册
 ```
 
 
