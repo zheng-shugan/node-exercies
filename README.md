@@ -5,30 +5,30 @@
 基于`Node.js`实现了注册、登陆、修改密码、修改头像等基本`API`。
 
 ## 目录结构
-
+`api_server`
 ```
-├── ./app.js							   # 入口文件
-├── ./config.js							   # 全局配置文件
-├── ./db								   # 数据库
-│   └── ./db/index.js				       # 导入自己的数据库 
-├── ./package.json					       # 项目信息
-├── ./router						       # express 路由
-│   ├── ./router/article.js				   # 文章管理
-│   ├── ./router/articleClass.js		   # 文章分类
-│   ├── ./router/index.js				   # 统一导出
-│   ├── ./router/user.js				   # 登陆、注册
-│   └── ./router/userInfo.js               # 用户信息
-├── ./router_handler                       # 路由处理函数
-│   ├── ./router_handler/article.js		   # 文章管理
-│   ├── ./router_handler/articleClass.js   # 文章分类
-│   ├── ./router_handler/index.js		   # 统一导出
-│   ├── ./router_handler/user.js		   # 登陆、注册
-│   └── ./router_handler/userInfo.js	   # 用户信息
-└── ./schema                               # 校验规则     
-    ├── ./schema/articleClass.json         # 文章分类
-    ├── ./schema/article.json              # 文章管理
-    ├── ./schema/index.json                # 统一导出
-    └── ./schema/user.json                 # 登陆、注册
+├── ./app.js  # 入口文件
+├── ./config.js # 全局配置文件
+├── ./db  # 数据库
+│   └── ./db/index.js				      
+├── ./package.json  # 项目信息
+├── ./router  # express 路由
+│   ├── ./router/article.js				   
+│   ├── ./router/articleClass.js		   
+│   ├── ./router/index.js				   
+│   ├── ./router/user.js				   
+│   └── ./router/userInfo.js               
+├── ./router_handler  # 路由处理函数
+│   ├── ./router_handler/article.js		   
+│   ├── ./router_handler/articleClass.js   
+│   ├── ./router_handler/index.js		   
+│   ├── ./router_handler/user.js		   
+│   └── ./router_handler/userInfo.js	   
+└── ./schema  # 校验规则     
+    ├── ./schema/articleClass.json         
+    ├── ./schema/article.json              
+    ├── ./schema/index.json                
+    └── ./schema/user.json                 
 ```
 
 
@@ -40,10 +40,10 @@ import mysql from "mysql";
 
 // 创建数据库连接对象
 const db = mysql.createPool({
-  host: '127.0.0.1',             // 数据库的地址
-  user: 'root',               	 // 数据库用户
-  password: 'Your SQL password', // 数据库密码
-  database: 'my_db_01',         // 数据库名称
+  host: '127.0.0.1',              	// 数据库的地址
+  user: 'root',               	 	// 数据库用户
+  password: 'Your SQL password', 	// 数据库密码
+  database: 'my_db_01',          	// 数据库名称
 })
 
 export default db
@@ -70,4 +70,3 @@ export default db
 http://escook.cn:8088/#/
 
 https://www.showdoc.com.cn/escook/3707158761215217
-
